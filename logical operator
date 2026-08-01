@@ -1,0 +1,24 @@
+5.Write a program using logical operators to check if a student passes (marks ≥ 40 and attendance ≥ 75).
+
+marks = float(input("Enter marks: "))
+attendance = float(input("Enter attendance percentage: "))
+if(marks>=40 and marks>=75):
+    print("pass")
+else:
+    print("false")
+
+6 Given a = [1,2,3], b = [1,2,3], c = a — find output of 'a is b' and 'a is c' and explain.
+a=[1,2,3]
+b=[1,2,3]
+c=a 
+print(a is b)
+print(a is c) 
+
+ #Write a program to find the largest of two numbers using only operators (no max()). 
+
+a = 10
+b = 20
+
+largest = a if a > b else b
+
+print(f"The largest number is: {largest}")
