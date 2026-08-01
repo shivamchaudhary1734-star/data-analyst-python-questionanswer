@@ -1,0 +1,33 @@
+Write a simple calculator using +, -, *, / based on user input.
+def calculate():
+    try:
+        # Get user input for numbers and operator
+        num1 = float(input("Enter first number: "))
+        operator = input("Enter operator (+, -, *, /): ")
+        num2 = float(input("Enter second number: "))
+
+        # Perform operation based on the operator
+        if operator == '+':
+            result = num1 + num2
+        elif operator == '-':
+            result = num1 - num2
+        elif operator == '*':
+            result = num1 * num2
+        elif operator == '/':
+            # Check for division by zero
+            if num2 != 0:
+                result = num1 / num2
+            else:
+                return "Error: Division by zero is not allowed."
+        else:
+            return "Error: Invalid operator."
+
+        return f"The result is: {result}"
+
+    except ValueError:
+        return "Error: Please enter valid numeric values."
+
+# Run the calculator
+print(calculate())
+
+  
